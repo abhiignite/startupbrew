@@ -28,7 +28,7 @@ function showRegisterForm(){
             $('.register-footer').fadeIn('fast');
         });
         $('.modal-title').html('Create an Account');
-        $('.modal-subtitle').html('Begin a 30-day free trial of SmartMVP');
+        $('.modal-subtitle').html('Begin a 30-day free trial of StartupBrew');
     });
     $('.error').removeClass('alert alert-danger').html('');
 }
@@ -42,7 +42,7 @@ function showLoginForm(){
             $('.login-footer').fadeIn('fast');
         });
         
-        $('.modal-title').html('Sign in to <span>SmartMvp</span>');
+        $('.modal-title').html('Sign in to <span>StartupBrew</span>');
         $('.modal-subtitle').html('Enter your email and password');
     });
     $('.error').removeClass('alert alert-danger').html('');
