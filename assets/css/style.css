@@ -1441,8 +1441,14 @@ p {
 /* ==========================================================================
    12. TEAM SECTION
 ========================================================================== */ 
+
+.team-bio {
+    text-align: justify;
+}
+
 .team h4{
     margin-top: 20px;
+    text-align: center;
 }
 
 .team-img{
@@ -1454,8 +1460,11 @@ p {
     -o-perspective: 300px;
     -webkit-border-radius: 5%;
     -moz-border-radius: 5%;
-    border-radius: 5%;
+    border-radius: 100%;
     opacity:0.85;
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
 }
 
 .team-img .img-overlay{

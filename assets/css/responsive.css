@@ -635,6 +635,14 @@
         margin-bottom: 30px;
     }
 
+     .team .team-img{
+        width: 30%;
+        float: left;
+        clear:both;
+        margin-top:0;
+        margin-right: 10px;
+    }
+    
     .team .team-box:last-child{
         margin-bottom: 0;
     }
@@ -772,7 +780,7 @@
     /*    Team
     /*------------------------------------------*/
     .team .team-img{
-        width:100%;
+        width:60%;
         margin-bottom: 10px;
     }
 
