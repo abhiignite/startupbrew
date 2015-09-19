@@ -227,9 +227,10 @@ if (onMobile === true) {
 /* ==========================================
    MAILCHIMP NEWSLETTER SUBSCRIPTION
 ============================================= */
-$(".mailchimp-subscribe").ajaxChimp({
+
+/*$(".mailchimp-subscribe").ajaxChimp({
     callback: mailchimpCallback,
-    url: "http://themedept.us9.list-manage.com/subscribe/post?u=63465a86fdd5f3b9fa31f9278&amp;id=52df53337f" // Replace your mailchimp post url inside double quote "".  
+    url: "http://startupbrew.us11.list-manage.com/subscribe/post?u=f4d08b63cd6db984e1af029d5&amp;id=d6bd19833a" // Replace your mailchimp post url inside double quote "".  
 });
 
 function mailchimpCallback(resp) {
@@ -247,7 +248,7 @@ if(resp.result === 'success') {
             
     $('.mc-success').fadeOut(500);
 }
-}
+} */
 
 /* ==========================================
    FUNCTION FOR EMAIL ADDRESS VALIDATION
