@@ -9,7 +9,7 @@ $(window).load(function() {
     "use strict";
 
     // will first fade out the loading animation
-    $(".signal").fadeOut();
+    $(".signal").fadeOut("fast");
         // will fade out the whole DIV that covers the website.
     $(".preloader").fadeOut("fast");
 
