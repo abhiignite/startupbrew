@@ -36,7 +36,7 @@ gulp.task('scripts', function() {
  gulp.task('images', function() {
   return gulp.src(src + 'images/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
-    .pipe(gulp.dest(dest + 'img'));
+    .pipe(gulp.dest(dest + 'images'));
 });
 
  // Watch for changes in files
