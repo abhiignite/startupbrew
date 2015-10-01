@@ -146,15 +146,6 @@ $("#owl-carousel-shots-phone").owlCarousel({
 ============================================= */
 $('.venobox').venobox();
 
-/* ===================================================================
-    TWEETIE -  TWITTER FEED PLUGIN THAT WORKS WITH NEW Twitter 1.1 API
-==================================================================== */
-$('.tweet').twittie({
-    apiPath : 'assets/js/plugins/twitter/api/tweet.php',
-    count: 2,
-    template: '{{tweet}} - <span class="date">{{date}}</span>'
-});
-
 
 /* =================================
    SCROLL TO                  
