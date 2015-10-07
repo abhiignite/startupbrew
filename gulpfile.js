@@ -7,6 +7,7 @@ var dest = 'build/';
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
+var cssmin = require('gulp-cssmin');
 var cache = require('gulp-cache');
 var fs = require('fs');
 var path = require('path');
@@ -33,6 +34,25 @@ gulp.task('scripts', function() {
   });
 });
 
+gulp.task('css', function() {
+   var folders = getFolders(src);
+   var tasks = folders.map(function(folder) {
+	 return gulp.src(path.join(src, folder, '/**/*.css'))
+		.pipe(cssmin())
+		.pipe(gulp.dest(dest+'css'))
+   });
+
+   gulp.start('copyfonts');
+
+});
+
+gulp.task('copyfonts', function() {
+   var folders = getFolders(src);
+   return gulp.src(src+'fonts/*.*')
+    .pipe(gulp.dest(dest+'fonts'))
+   
+});
+
  gulp.task('images', function() {
   return gulp.src(src + 'images/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
@@ -50,4 +70,4 @@ gulp.task('watch', function() {
  });
 
  // Default Task
-gulp.task('default', ['scripts', 'images', 'watch']);
+gulp.task('default', ['scripts', 'images','css']);
